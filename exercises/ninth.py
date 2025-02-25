@@ -1,4 +1,3 @@
-# Escribir un programa que exprese cierta cantidad de soles en billetes y monedas de curso legal.
 
 bills = [200, 100, 50, 20, 10]
 coins = [5, 2, 1, 0.5, 0.2, 0.1]

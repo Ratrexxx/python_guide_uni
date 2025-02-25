@@ -1,4 +1,4 @@
-from exercises import first, second, third, fourth, fifth, sixth, seventh
+from exercises import first, second, third, fourth, fifth, sixth, seventh, eighth
 from descriptions import descriptions
 
 def run_exercise(number, solution, description):
@@ -19,7 +19,8 @@ def main():
         4: fourth.solution,
         5: fifth.solution,
         6: sixth.solution,
-        7: seventh.solution
+        7: seventh.solution,
+        8: eighth.solution
     }
     
     exercise_descriptions = descriptions()

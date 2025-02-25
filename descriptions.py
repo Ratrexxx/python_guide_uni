@@ -36,7 +36,12 @@ def descriptions():
     """
     
     eighth = """
-    
+    Escribir un programa de desglose cierta cantidad de segundos introducida
+    Por teclado en su equivalente en semanas, días, horas, minutos y segundos.
     """
-    return first, second, third, fourth, fifth, sixth, seventh
+    
+    ninth = """
+     Escribir un programa que exprese cierta cantidad de soles en billetes y monedas de curso legal.
+    """
+    return first, second, third, fourth, fifth, sixth, seventh, eighth
     
