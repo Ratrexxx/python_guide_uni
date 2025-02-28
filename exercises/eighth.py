@@ -1,21 +1,22 @@
+from utils import get_int_input
+
 def solution():
-    def get_valid_seconds(prompt: str) -> int:
-        while True:
-            seconds = int(input(prompt))
-            if seconds > 0:
-                return seconds
-            else:
-                print("Invalid seconds. Please enter a positive number.")
-
-    seconds = get_valid_seconds("Please enter the amount of seconds you want to break down: ")
-    minutes = seconds // 60
-    hours = minutes // 60
-    days = hours // 24
-    weeks = days // 7
-
-    print(f"{seconds} seconds are equivalent to:")
+    total_seconds = get_int_input("Please enter the amount of seconds you want to break down: ", min_value=1)
+    
+    minutes, seconds = divmod(total_seconds, 60)
+    hours, minutes = divmod(minutes, 60)
+    days, hours = divmod(hours, 24)
+    weeks, days = divmod(days, 7)
+    
+    print(f"{total_seconds} seconds are equivalent to:")
+    print(f"{weeks} weeks, {days} days, {hours} hours, {minutes} minutes, and {seconds} seconds")
+    
+    if weeks > 0:
+        print(f"{weeks} weeks")
+    if days > 0:
+        print(f"{days} days")
+    if hours > 0:
+        print(f"{hours} hours")
+    if minutes > 0:
+        print(f"{minutes} minutes")
     print(f"{seconds} seconds")
-    print(f"{minutes} minutes")
-    print(f"{hours} hours")
-    print(f"{days} days")
-    print(f"{weeks} weeks")

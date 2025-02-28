@@ -1,11 +1,8 @@
-def solution():   
+from utils import get_float_input
+
+def solution():
     def get_valid_score(prompt: str) -> float:
-     while True:
-        score = float(input(prompt))
-        if 0.1 <= score <= 5:
-            return score
-        else:
-            print("Invalid score. Please enter a value between 0.1 and 5.")
+        return get_float_input(prompt, min_value=0.1, max_value=5)
 
     first_score = get_valid_score("Please enter the first score: ")
     second_score = get_valid_score("Please enter the second score: ")
