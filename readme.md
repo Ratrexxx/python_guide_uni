@@ -14,11 +14,11 @@ Este proyecto contiene una colección de ejercicios de programación en Python d
 
 ### Ejecutar todos los ejercicios
 Para ejecutar todos los ejercicios secuencialmente:
-python main.py
+`python main.py`
 
 ### Ejecutar ejercicios específicos
 Para ejecutar uno o varios ejercicios específicos, indique los números de ejercicio como argumentos:
-python main.py 1 3 5
+`python main.py 1 3 5`
 Este comando ejecutará los ejercicios 1, 3 y 5.
 
 
